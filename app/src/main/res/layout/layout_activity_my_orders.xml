@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/simple_toolbar" />
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center_horizontal"
+        android:text="@string/my_orders"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:id="@+id/tv_my_orders" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_my_orders"
+        android:gravity="center"
+        android:id="@+id/my_orders_bt_start"
+        android:text="@string/start_delivery"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#4CAF50"
+        android:onClick="StartDelivery"
+        android:visibility="gone" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_orders_bt_start"
+        android:id="@+id/my_orders_rv_orders"
+        android:visibility="gone" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_my_orders"
+        android:background="#0D47A1"
+        android:visibility="gone"
+        android:id="@+id/empty_orders">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/explanation_1"
+            style="@style/MyOrdersTextAppearance"
+            android:id="@+id/my_orders_explanation_1" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_empty_box"
+            android:id="@+id/my_orders_empty_box" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/explanation_2"
+            style="@style/MyOrdersTextAppearance"
+            android:id="@+id/my_orders_explanation_2" />
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/my_orders_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="#FFFFFF" />
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/datosCliente">
+        <TextView
+            android:id="@+id/textView_datosCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:text="Datos del cliente"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView_nombreComensal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="Ernesto Torres" />
+        <TextView
+            android:id="@+id/textView_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:text="C. 15 #117 x26 y 26A, Chuburná de Hidalgo" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/detallesPedido"
+        android:layout_below="@+id/datosCliente"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/textView_detallesPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="#000000"
+            android:ems="10"
+            android:text="Detalles del pedido"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000000" />
+        <TextView
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:textColor="#000000"
+            android:text="Total: $235"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView_mostrarPedidos"
+            android:layout_width="wrap_content"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="1 Hamburguesa, 2 Alitas de pollo"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/detallesPedido"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/botonesDetalles">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uno"
+            android:orientation="horizontal"
+            android:layout_above="@+id/buttonAccionPedido">
+            <Button
+                android:id="@+id/buttonContactar"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:enabled="true"
+                android:text="Llamar"
+                android:onClick="callNumber"/>
+            <Button
+                android:id="@+id/buttonComoLlegar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="¿Cómo llegar?"
+                android:onClick="viewAddress"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonAccionPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            android:text="Pedido entregado" />
+    </RelativeLayout>
+</RelativeLayout>

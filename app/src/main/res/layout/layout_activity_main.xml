@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp">
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/srx_repartidor_logo"
+        android:gravity="center_vertical" />
+    <EditText
+        android:id="@+id/editText_login_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="Testuser"
+        android:hint="@string/hint_user" />
+    <EditText
+        android:id="@+id/editText_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:text="Testpass"
+        android:hint="@string/hint_password" />
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:onClick="login"/>
+    <Button
+        android:id="@+id/button_forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password" />
+    <TextView
+        android:id="@+id/obtain_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/obtain_account"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAlignment="center"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true" />
+</LinearLayout>

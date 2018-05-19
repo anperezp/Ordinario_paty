@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Click Me!</string>
+    <string name="app_name">SRX Repartidor</string>
+
+    <!--Login Screen-->
+    <string name="hint_user">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="forgot_password">Olvidé mi contraseña</string>
+    <string name="obtain_account"><u>¿Cómo obtengo una cuenta?</u></string>
+
+    <!--ActivityMyOrders-->
+    <string name="start_all_deliveries">Iniciar todos los repartos</string>
+    <string name="start_selected_deliveries">Iniciar reparto (seleccionados)</string>
+    <string name="deliveryman">Repartidor</string>
+    <string name="my_orders">Pedidos asignados a mí</string>
+    <string name="explanation_1">Parece que aún no se te ha asignado ningún pedido para reparto.</string>
+    <string name="explanation_2">Presiona el botón "+" para ver los pedidos que no cuentan con un repartidor asignado</string>
+    <string name="start_delivery">Iniciar reparto</string>
+
+    <!--ActivityUnassignedOrders-->
+    <string name="unassigned_orders">Pedidos sin asignar</string>
+    <string name="assign_order">Asignar pedido</string>
+    <string name="assign_orders">Asignarme los pedidos</string>
+    <string name="assigned_order">Pedido agregado</string>
+
+    <!--ActivityDeliverOrders-->
+    <string name="delivery_in_progress">Reparto en curso</string>
+    <string name="mark_all_as_delivered">Marcar todos como entregados</string>
+    <string name="mark_selected_as_delivered">Marcar como entregados</string>
+    <string name="mark_as_delivered">Entregado</string>
+    <string name="delivered_order">Pedido entregado</string>
+    <string name="delivered_orders">Pedidos entregados</string>
+
+
+    <!--Warnings-->
+    <string name="warning_empty_username">El nombre de usuario no puede estar vacio</string>
+    <string name="warning_empty_password">La contraseña no puede estar vacía</string>
+    <string name="warning_server_error">Ocurrió un error con el servidor</string>
+
+    <!--Dialogs-->
+    <string name="dialog_wait">Espere un momento porfavor</string>
+    <string name="dialog_login">Iniciando sesión</string>
+    <string name="dialog_get_orders">Obteniendo tus órdenes</string>
+
+    <!--Menu-->
+    <string name="sale_options_view_detail">Ver detalle</string>
+    <string name="sale_options_route">¿Cómo llegar?</string>
+    <string name="sale_options_mark_as_delivered">Entregado</string>
+
+    <!--SaleDetails-->
+    <string name="sale_details_client_information">Datos del cliente</string>
+    <string name="sale_details_sale_details">Detalles del pedido</string>
+    <string name="sale_details_contact">Contactar</string>
+    <string name="sale_details_route">¿Cómo llegar?</string>
+    <string name="sale_details_mark_as_delivered">Pedido entregado</string>
+
+    <!--SaleResume-->
+    <string name="sale_folio">Folio</string>
+</resources>

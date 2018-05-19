@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <include
+        android:id="@+id/toolbar"
+        layout="@layout/simple_toolbar" />
+
+  <TextView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center_horizontal"
+        android:text="@string/delivery_in_progress"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:id="@+id/in_progress" />
+
+  <android.support.v7.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/in_progress"
+      android:id="@+id/deliver_orders_recycler_view" />
+
+  <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:text="@string/mark_all_as_delivered"
+     android:id="@+id/mark_as_delivered"
+      android:onClick="MarkAsDelivered_Click"/>
+
+</RelativeLayout>
