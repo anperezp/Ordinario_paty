@@ -35,6 +35,8 @@ public class ActivityUnassignedOrders extends SaleAdapterListenerActivity implem
             deliveryman.DeliveryManId = null;
 
             ModelResult result = SaleService.GetOrders(new DeliveryOrderRequestViewModel(deliveryman, ESaleStatus.NEW));
+            //Se vuelve a asignar el ID
+            deliveryman.DeliveryManId = Constants.GUID_DELIVERYMAN_ALAN;
             unassignedOrders = (DeliveryOrdersViewModel) result.Object;
 
             if(unassignedOrders.saleRestaurants.size() == 0)

@@ -55,7 +55,7 @@ public class SaleService
                         serverSale.ESaleStatus = updateSales.ESaleStatus;
 
                         if (updateSales.ESaleStatus == ESaleStatus.CONFIRMED)
-                            serverSale.DeliveryManId.equals(updateSales.DeliveryMan.DeliveryManId);
+                            serverSale.DeliveryManId = updateSales.DeliveryMan.DeliveryManId;
 
                         updatedSales.add(serverSale);
                         break;

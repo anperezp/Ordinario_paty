@@ -18,8 +18,8 @@ public class DATA
     //Preparar los datos
     public static void Prepare()
     {
-        if (isPrepared)
-            return;
+        //Asignar ID al deliveryman
+        Constants.DELIVERYMAN.DeliveryManId = Constants.GUID_DELIVERYMAN_ALAN;
         //Guids para SaleRestaurants
         String[] SaleRestaurantGuids =
         {
