@@ -4,7 +4,7 @@
     <string name="app_name">SRX Repartidor</string>
 
     <!--Login Screen-->
-    <string name="hint_user">Usuario</string>
+    <string name="hint_user">Email de Google</string>
     <string name="hint_password">Contraseña</string>
     <string name="login">Iniciar sesión</string>
     <string name="forgot_password">Olvidé mi contraseña</string>

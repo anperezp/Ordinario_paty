@@ -8,4 +8,5 @@ public class Constants
     public static final UUID GUID_DELIVERYMAN_ALAN = UUID.randomUUID();
     public static final UUID GUID_DELIVERYMAN_FULANO = UUID.randomUUID();
     public static final DeliveryMan DELIVERYMAN = new DeliveryMan(GUID_DELIVERYMAN_ALAN, "Alan", "Barrera", "Username", "Password");
+    public static final int RC_SIGN_IN = 1;
 }

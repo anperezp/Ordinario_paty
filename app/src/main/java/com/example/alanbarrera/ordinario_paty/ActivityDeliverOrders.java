@@ -30,7 +30,7 @@ public class ActivityDeliverOrders extends SaleAdapterListenerActivity
         deliveryMan = Utils.getDeliveryman();
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(getString(R.string.deliveryman) + " - " + deliveryMan.FirstName + " " + deliveryMan.LastName);
+        toolbar.setTitle(getString(R.string.deliveryman) + " - " + deliveryMan.FirstName);
 
         ModelResult result = SaleService.GetOrders(new DeliveryOrderRequestViewModel(deliveryMan, ESaleStatus.INTRANSIT));
         orders = (DeliveryOrdersViewModel) result.Object;

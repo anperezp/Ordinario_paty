@@ -30,7 +30,7 @@ public class ActivityMyOrders extends SaleAdapterListenerActivity
         deliveryman = Utils.getDeliveryman();
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(getString(R.string.deliveryman) + " - " + deliveryman.FirstName + " " + deliveryman.LastName);
+        toolbar.setTitle(getString(R.string.deliveryman) + " - " + deliveryman.FirstName);
 
         fab = findViewById(R.id.my_orders_fab);
         fab.setOnClickListener(new View.OnClickListener() {
