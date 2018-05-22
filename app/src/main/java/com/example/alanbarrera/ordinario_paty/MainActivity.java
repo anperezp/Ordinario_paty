@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button logOutButton;
     private Button nextScreenButton;
     private GoogleSignInClient mGSignInClient;
-    private GoogleSignInAccount account;
+    public GoogleSignInAccount account;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
         try {
-            GoogleSignInAccount account = completedTask.getResult(ApiException.class);
+            account = completedTask.getResult(ApiException.class);
             Constants.DELIVERYMAN.FirstName = account.getDisplayName();
             // Signed in successfully, show authenticated UI.
             Intent intent = new Intent(this, ActivityMyOrders.class);
